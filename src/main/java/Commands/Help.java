@@ -19,7 +19,7 @@ public class Help extends ListenerAdapter {
 
         if (e.getMessage().getAuthor().isBot()) return;
         if (e.getMessage().getContentRaw().equalsIgnoreCase(ch.getPrefix() + "help")) {
-            e.getChannel().sendMessage((CharSequence) eb.build()).queue();
+            e.getMessage().replyEmbeds(eb.build()).queue();
         }
     }
 
