@@ -1,7 +1,7 @@
 package Events;
 
 import ConfigHandler.ConfigHandler;
-import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
+import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
 import java.util.ArrayList;
@@ -15,13 +15,13 @@ public class MessageEvent extends ListenerAdapter {
         this.ch = ch;
     }
 
-    public void onGuildMessageReceived(GuildMessageReceivedEvent e) {
+    public void onGuildMessageReceived(MessageReceivedEvent e) {
         String message = e.getMessage().getContentRaw();
         checkSpam(message, e);
 
     }
 
-    public void checkSpam(String message, GuildMessageReceivedEvent event) {
+    public void checkSpam(String message, MessageReceivedEvent event) {
         spam.add("fuck");spam.add("dick");spam.add("shit");spam.add("kurac");spam.add("kurcina");spam.add("kurćina");spam.add("kurčina");
         spam.add("jebati");spam.add("jebem");spam.add("jeben");spam.add("jeba");spam.add("jebo");spam.add("pas mater");spam.add("picka");
         spam.add("picketina");spam.add("picko");spam.add("pizda");spam.add("pidzo");spam.add("pizde");spam.add("pizdu");spam.add("picku");
