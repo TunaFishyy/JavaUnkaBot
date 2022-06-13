@@ -1,1 +1,1 @@
-Worker: java src/main/java/Bot.java
+Worker: java JavaUnkaBot/src/main/java/Bot.java
