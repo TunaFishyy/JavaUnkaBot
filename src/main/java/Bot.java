@@ -16,7 +16,8 @@ public class Bot {
         Bot bot = new Bot(new ConfigHandler());
 
         JDA jda = JDABuilder.createDefault(bot.ch.getToken()).build();
-        jda.addEventListener(new Help(bot.ch), new MessageEvent(bot.ch));
+        jda.addEventListener(new Help(bot.ch));
+        jda.addEventListener(new MessageEvent(bot.ch));
 
     }
 }

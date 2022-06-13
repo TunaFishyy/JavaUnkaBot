@@ -12,7 +12,7 @@ public class Help extends ListenerAdapter {
         this.ch = ch;
     }
 
-    public void onGuildMessageReceived(MessageReceivedEvent e) {
+    public void onMessageReceived(MessageReceivedEvent e) {
         EmbedBuilder eb = new EmbedBuilder();
         eb.setTitle("**Help Izbornik**");
         eb.setDescription("Trenutno nema komandi, samo psovke filter.");
