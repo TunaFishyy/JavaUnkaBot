@@ -15,7 +15,8 @@ public class MessageEvent extends ListenerAdapter {
         this.ch = ch;
     }
 
-    public void onGuildMessageReceived(MessageReceivedEvent e) {
+    @Override
+    public void onMessageReceived(MessageReceivedEvent e) {
         String message = e.getMessage().getContentRaw();
         checkSpam(message, e);
 
