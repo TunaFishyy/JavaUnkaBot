@@ -12,7 +12,7 @@
         <dependency>
             <groupId>net.dv8tion</groupId>
             <artifactId>JDA</artifactId>
-            <version>4.2.0_168</version>
+            <version>v5.0.0-alpha.12</version>
         </dependency>
     </dependencies>
 
@@ -21,6 +21,10 @@
             <id>jcenter</id>
             <name>jcenter-bintray</name>
             <url>http://jcenter.bintray.com</url>
+        </repository>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
         </repository>
     </repositories>
 
