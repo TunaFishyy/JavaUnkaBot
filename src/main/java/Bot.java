@@ -15,9 +15,8 @@ public class Bot {
     public static void main(String[] args) throws Exception {
         Bot bot = new Bot(new ConfigHandler());
 
-        JDA jda = new JDABuilder(bot.ch.getToken()).build();
-        jda.addEventListener(new MessageEvent(new ConfigHandler()));
-        jda.addEventListener(new Help(new ConfigHandler()));
+        JDABuilder jda = (JDABuilder) JDABuilder.createDefault(bot.ch.getToken()).build();
+        jda.addEventListeners(new Help(bot.ch), new MessageEvent(bot.ch));
 
     }
 }
