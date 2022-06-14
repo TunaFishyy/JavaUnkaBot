@@ -1,1 +1,1 @@
-Worker: java Z:\tuna\dev\intellij\JavaUnkaBot\src\main\java\Bot.java
+Worker: java Z:/tuna/dev/intellij/JavaUnkaBot/src/main/java/Bot.java
