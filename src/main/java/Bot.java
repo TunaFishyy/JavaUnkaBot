@@ -11,9 +11,14 @@ public class Bot {
         this.ch = ch;
     }
 
+    String getCurrentDirectory() {
+        return this.getClass().getClassLoader().getResource("").getPath();
+    }
+
     @Deprecated
     public static void main(String[] args) throws Exception {
         Bot bot = new Bot(new ConfigHandler());
+        System.out.println(bot.getCurrentDirectory());
 
         JDA jda = JDABuilder.createDefault(bot.ch.getToken()).build();
         jda.addEventListener(new Help(bot.ch));
