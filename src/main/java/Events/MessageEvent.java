@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class MessageEvent extends ListenerAdapter {
 
     private ArrayList<String> spam = new ArrayList<>();
-    private final ConfigHandler ch;
+    public final ConfigHandler ch;
 
     public MessageEvent(ConfigHandler ch) {
         this.ch = ch;

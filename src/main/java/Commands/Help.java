@@ -6,7 +6,7 @@ import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
 public class Help extends ListenerAdapter {
-    private final ConfigHandler ch;
+    public final ConfigHandler ch;
 
     public Help(ConfigHandler ch) {
         this.ch = ch;
