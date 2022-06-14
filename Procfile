@@ -1,1 +1,1 @@
-web: java target/classes/Bot.jar
+worker: java src/main/java/Bot.java
