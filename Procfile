@@ -1,1 +1,1 @@
-Worker: java src/main/java/Bot
+Worker: java src/main/java/io.github.TunaFishyy.Bot

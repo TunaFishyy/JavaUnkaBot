@@ -1,6 +1,8 @@
-import Commands.Help;
-import ConfigHandler.ConfigHandler;
-import Events.MessageEvent;
+package io.github.TunaFishyy;
+
+import io.github.TunaFishyy.Commands.Help;
+import io.github.TunaFishyy.ConfigHandler.ConfigHandler;
+import io.github.TunaFishyy.Events.MessageEvent;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 

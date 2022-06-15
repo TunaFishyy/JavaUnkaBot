@@ -1,6 +1,6 @@
-package Events;
+package io.github.TunaFishyy.Events;
 
-import ConfigHandler.ConfigHandler;
+import io.github.TunaFishyy.ConfigHandler.ConfigHandler;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
