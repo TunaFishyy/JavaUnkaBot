@@ -1,1 +1,1 @@
-Worker: java -cp target/classes Bot
+worker: java $JAVA_OPTS -jar target/classes/Bot
