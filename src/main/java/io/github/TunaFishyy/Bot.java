@@ -13,7 +13,6 @@ public class Bot {
         this.ch = ch;
     }
 
-    @Deprecated
     public static void main(String[] args) throws Exception {
         Bot bot = new Bot(new ConfigHandler());
 
