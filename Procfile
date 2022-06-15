@@ -1,1 +1,1 @@
-Worker: java Bot
+Worker: java target/classes/Bot.class
