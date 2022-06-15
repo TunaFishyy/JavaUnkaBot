@@ -7,8 +7,17 @@ import java.util.Properties;
 
 public class ConfigHandler {
 
-    public final String getToken() throws IOException {
+    public final String getToken() {
         return System.getenv("TOKEN");
+    }
+
+    public final String getConfigToken() throws Exception {
+        String configFilePath = "src/main/resources/config.properties";
+        FileInputStream propsInput = new FileInputStream(configFilePath);
+        Properties prop = new Properties();
+        prop.load(propsInput);
+
+        return prop.getProperty("TOKEN");
     }
 
     public final String getPrefix()  {
